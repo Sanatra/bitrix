@@ -1,0 +1,238 @@
+// ----- Media requests ----- //
+@media screen and(max-width: 1790px) {
+    .advang__right--box {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .simplify__box {
+        padding-left: 0;
+    }
+
+    .line {
+        width: 22px;
+        height: 3px;
+        background-color: $biriz;
+        border-radius: 50px;
+        margin-bottom: 3px;
+        z-index: 7;
+    }
+
+    .hamburger {
+        position: absolute;
+        cursor: pointer;
+        right: 50px;
+        z-index: 6;
+    }
+
+    .header__top-list {
+        position: fixed;
+        background: $main;
+        height: 100vh;
+        width: 100%;
+        left: 0;
+        bottom: -20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        z-index: 5;
+        padding: 100px 50px;
+        clip-path: circle(100px at 95% 6%);
+        -webkit-clip-path: circle(100px at 120% -25%);
+        transition: all .9s ease-out;
+        pointer-events: none;
+
+        li {
+            margin-right: 0 !important;
+            color: #fff;
+
+            a {
+                @include adapt-font(30, 25);
+
+                &:hover {
+                    border-bottom: 1px solid #fff;
+                }
+            }
+        }
+
+        &.open {
+            clip-path: circle(1900px at 95% 6%);
+            -webkit-clip-path: circle(1900px at 95% 6%);
+            pointer-events: all;
+        }
+
+    }
+
+    .header__top-btn {
+        display: none;
+    }
+}
+
+@media screen and(max-width: 1463px) {
+    .sales__tp-box {
+        margin-bottom: 15px;
+    }
+
+    .sales__bottom-inner {
+        justify-content: center;
+    }
+}
+
+@media(max-width: 1430px) {
+    .information {
+        background-position-x: 520px;
+    }
+
+    .sales__top-inner {
+        justify-content: center;
+    }
+
+    .tp__box {
+        height: 420px;
+    }
+}
+
+@media screen and(max-width: 1400px) {
+    .products__inner {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .products__box {
+        max-width: 900px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        align-self: auto;
+        margin-bottom: 50px;
+
+        &:first-child {
+            margin-top: 50px;
+        }
+    }
+
+    .products__box--three {
+        margin-top: 0;
+    }
+
+    .products__content-title {
+        h5 {
+            @include adapt-font(40, 25);
+        }
+    }
+}
+
+@media screen and(max-width: 1280px) {
+    .differences__content-title {
+        h6 {
+            margin-bottom: 20px;
+        }
+    }
+
+    .differences__box-two {
+        margin-top: 50px;
+    }
+
+    .differences__box,
+    .differences__box-two {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .differences__content {
+        margin: 0 auto;
+    }
+}
+
+@media screen and(max-width: 1000px) {
+    .differences__box-two {
+        .differences__content-text {
+            h5 {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    .differences__content-text {
+        h5 {
+            margin-bottom: 25px;
+        }
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .information {
+        background-image: none !important;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 880px) {
+
+    .information__top-text {
+        h5 {
+            margin-bottom: 50px;
+        }
+    }
+}
+
+@media screen and(max-width: 800px) {
+    .simplify__box {
+        flex-direction: column;
+    }
+
+    .simplify__title {
+        h5 {
+            bottom: 0px;
+        }
+    }
+}
+
+@media screen and (max-width: 748px) {
+    .sales__tp-box {
+        max-width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .simplify {
+        min-height: 500px;
+    }
+}
+
+@media screen and(max-width: 590px) {
+    .tp__box {
+        max-width: 100%;
+        height: 100%;
+        display: block;
+
+        &-text {
+            h6 {
+                margin-bottom: 15px;
+            }
+        }
+
+        &-sum {
+            margin-bottom: 15px;
+        }
+
+        &-img {
+            img {
+                max-width: 100%;
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .simplify {
+        border-radius: 0px 200px 200px 0px;
+    }
+}
+
+// ----- Media requests ----- //
